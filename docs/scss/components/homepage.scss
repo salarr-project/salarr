@@ -1,0 +1,340 @@
+@import "../shared/variable.scss";
+@import "../shared/mixin.scss";
+
+.carousel-container {
+  width: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: $white;
+  max-width: unset;
+
+  @include screen(desktop) {
+    width: 87%;
+  }
+
+  @include screen(large-desktop) {
+    max-width: 1500px;
+  }
+
+  .custom-row {
+    flex-flow: row;
+  }
+
+  p {
+    @include screen(desktop) {
+      font-size: 20px;
+    }
+  }
+
+  .float-text {
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    width: auto;
+    left: 10%;
+    bottom: -30px;
+    max-width: 350px;
+    padding: 10px 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    @include screen(tablet-portrait) {
+      background-color: $white;
+      padding: 30px 20px;
+    }
+
+    @include screen(tablet-landscape) {
+      max-width: 485px;
+    }
+  }
+}
+
+.carousel-homepage {
+  max-width: 1400px;
+  max-height: 650px;
+  overflow: hidden;
+}
+
+.custom-row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel-title {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 38px;
+  padding-right: 32px;
+
+  @include screen(tablet-landscape) {
+    position: static;
+    display: flex;
+    align-items: center;
+    transform: none;
+    padding-left: 60px;
+  }
+
+  @include screen(desktop) {
+    margin-right: 210px;
+  }
+
+  &__long-text {
+    @include screen(tablet-landscape) {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 60%;
+      position: absolute;
+      left: 0;
+      top: 25%;
+
+      ~ .carousel {
+        width: 100%;
+
+        @include screen(desktop) {
+          margin-left: 210px;
+        }
+      }
+    }
+
+    h1 {
+      span {
+        @include screen(desktop) {
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    p {
+      display: none;
+
+      @include screen(tablet-landscape) {
+        display: block;
+      }
+    }
+  }
+
+  &:not(.carousel-title__long-text) {
+    h1 {
+      span {
+        white-space: nowrap;
+
+        @include screen(desktop) {
+          letter-spacing: 25px;
+        }
+      }
+    }
+  }
+}
+
+.section-portfolio {
+  position: relative;
+}
+
+.portfolio-bg-image {
+  max-height: 530px;
+  object-fit: cover;
+
+  @include screen(tablet-landscape) {
+    margin-left: -210px;
+  }
+}
+
+.portfolio-text {
+  @include screen(tablet-landscape) {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .description {
+    background-color: $white;
+    padding: 40px 30px;
+    position: relative;
+
+    @include screen(tablet-landscape) {
+      min-width: 650px;
+    }
+
+    @include screen(desktop) {
+      padding: 60px 30px 40px;
+      min-width: 900px;
+    }
+  }
+
+  blockquote {
+    font-size: 20px;
+    padding: 0 40px;
+
+    @include screen(tablet-landscape) {
+      font-size: 16px;
+      position: absolute;
+      right: 225px;
+      top: 25%;
+      width: 100%;
+      max-width: 260px;
+    }
+
+    @include screen(large-desktop) {
+      right: 250px;
+    }
+
+    @include screen(xlarge-desktop) {
+      right: 300px;
+    }
+
+    &::before,
+    &::after {
+      font-size: 60px;
+      line-height: 1;
+      position: absolute;
+    }
+
+    &::before {
+      content: "\201c";
+      top: -20px;
+      left: 50px;
+
+      @include screen(tablet-landscape) {
+        top: -30px;
+      }
+    }
+
+    &::after {
+      content: "\201d";
+      right: 30px;
+
+      @include screen(tablet-landscape) {
+        bottom: -60px;
+      }
+    }
+  }
+}
+
+.portfolio-round-image {
+  width: 158px;
+  height: 158px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.speaker {
+  text-align: center;
+  position: relative;
+
+  p {
+    white-space: nowrap;
+
+    @include screen(tablet-landscape) {
+      font-size: 12px;
+    }
+  }
+}
+
+.gallery {
+  margin-bottom: 25px;
+  position: relative;
+
+  @include screen(tablet-landscape) {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  @include screen(tablet-landscape) {
+    &.left {
+      .description {
+        right: 0;
+      }
+
+      .carousel-control-next {
+        display: none;
+      }
+    }
+
+    &.right {
+      flex-direction: row-reverse;
+      text-align: right;
+
+      .description {
+        left: 0;
+      }
+
+      .carousel-control-prev {
+        display: none;
+      }
+    }
+  }
+
+  .description {
+    margin-top: 30px;
+
+    @include screen(tablet-landscape) {
+      background-color: $white;
+      position: absolute;
+      z-index: 2;
+      padding: 20px;
+      top: 50%;
+      letter-spacing: 2px;
+      line-height: 1;
+      margin-top: 0;
+    }
+
+    @include screen(desktop) {
+      letter-spacing: 5px;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+
+      @include screen(tablet-landscape) {
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .image {
+    @include screen(tablet-landscape) {
+      width: 800px;
+    }
+  }
+}
+
+.image-gallery {
+  .carousel {
+    @include screen(tablet-landscape) {
+      width: 650px;
+    }
+  }
+}
+
+.activity-container {
+  max-width: 920px;
+  margin: 0 auto;
+
+  @include screen(desktop) {
+    max-width: 1148px;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

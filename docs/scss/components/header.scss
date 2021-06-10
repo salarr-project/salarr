@@ -1,0 +1,125 @@
+@import "../shared/variable.scss";
+@import "../shared/mixin.scss";
+
+header {
+  background-color: $red !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+
+  @include screen(tablet-landscape) {
+    position: static;
+  }
+
+  @include screen(desktop) {
+    background-color: $white !important;
+    padding-bottom: 30px !important;
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  @include screen(large-desktop) {
+    max-width: 1500px;
+  }
+
+  .navbar {
+    @include screen(tablet-landscape) {
+      background-color: $red;
+      width: 100%;
+    }
+
+    @include screen(desktop) {
+      background-color: $white;
+      width: 87%;
+      margin: 0 auto;
+    }
+
+    @include screen(large-desktop) {
+      max-width: 1500px;
+    }
+  }
+}
+
+.sticky {
+  @include screen(tablet-landscape) {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    -webkit-transform: translateZ(0);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
+
+.margin-top-me {
+  margin-top: 72.5px !important;
+
+  @include screen(tablet-landscape) {
+    margin-top: 0 !important;
+  }
+}
+
+.top-padding {
+  margin-top: 72.5px !important;
+
+  @include screen(tablet-landscape) {
+    margin-top: 0 !important;
+    padding-top: 63px;
+  }
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-brand {
+  margin: 0;
+
+  @include screen(tablet-landscape) {
+    padding-top: 30px;
+  }
+
+  img {
+    width: 80px;
+
+    @include screen(tablet-landscape) {
+      width: 150px;
+    }
+  }
+
+  &.desktop {
+    justify-self: center;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: $white;
+
+  @include screen(desktop) {
+    color: $black;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+
+  @include screen(desktop) {
+    color: rgba(0, 0, 0, 0.55);
+  }
+}
+
+.nav-link {
+  font-family: $font-family-regular;
+  font-weight: bold;
+
+  @include screen(tablet-landscape) {
+    font-size: 21px;
+    padding: 8px 20px !important;
+  }
+
+  @include screen(large-desktop) {
+    padding: 8px 30px !important;
+  }
+}

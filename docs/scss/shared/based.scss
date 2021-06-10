@@ -1,0 +1,172 @@
+@import "../shared/variable.scss";
+@import "../shared/mixin.scss";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-regular;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+
+  margin-bottom: -200px;
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  height: 20px;
+  display: block;
+  text-align: center;
+}
+
+.home-page-bg {
+  background-image: linear-gradient(to right, $red, $brown);
+}
+
+.red-bg {
+  background-color: $red;
+}
+
+.brown-bg {
+  background-color: $brown;
+}
+
+.decorate {
+  display: none;
+  position: fixed;
+
+  @include screen(desktop) {
+    display: block;
+    bottom: 20%;
+    width: 15vw;
+    left: 5px;
+  }
+
+  &.right {
+    right: 5px;
+    top: 20%;
+    bottom: unset;
+    left: unset;
+  }
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: $white;
+  padding: 0 20px;
+  max-width: unset;
+
+  @include screen(desktop) {
+    width: 87%;
+    padding: 0;
+  }
+
+  @include screen(large-desktop) {
+    max-width: 1500px;
+  }
+}
+
+section {
+  padding-bottom: 30px !important;
+
+  @include screen(tablet-portrait) {
+    padding-bottom: 60px !important;
+  }
+
+  ~ .bg-black {
+    margin-top: -30px !important;
+
+    @include screen(tablet-portrait) {
+      margin-top: -60px !important;
+    }
+  }
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-black {
+  padding-top: 30px !important;
+  background-color: $black !important;
+  color: $white;
+
+  @include screen(tablet-portrait) {
+    padding-top: 60px !important;
+  }
+
+  ~ .container {
+    padding-top: 30px;
+
+    @include screen(tablet-portrait) {
+      padding-top: 60px;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.ml--15 {
+  @include screen(desktop) {
+    margin-left: -15%;
+  }
+}
+
+.mr--15 {
+  @include screen(desktop) {
+    margin-right: -15%;
+  }
+}
+
+.section-break {
+  width: 100%;
+  height: 10px;
+  background-color: $gray;
+  margin: 25px 0;
+
+  @include screen(tablet-portrait) {
+    margin: 50px 0;
+  }
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.max-width_unset {
+  max-width: unset;
+}
