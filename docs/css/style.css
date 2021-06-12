@@ -364,9 +364,6 @@ header {
         display: block; } }
   .carousel-title:not(.carousel-title__long-text) h1 span {
     white-space: nowrap; }
-    @media (min-width: 1200px) {
-      .carousel-title:not(.carousel-title__long-text) h1 span {
-        letter-spacing: 25px; } }
 
 .section-portfolio {
   position: relative; }
@@ -477,9 +474,6 @@ header {
         letter-spacing: 2px;
         line-height: 1;
         margin-top: 0; } }
-    @media (min-width: 1200px) {
-      .gallery .description {
-        letter-spacing: 5px; } }
     .gallery .description p {
       margin-top: 10px;
       margin-bottom: 0; }

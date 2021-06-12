@@ -120,10 +120,6 @@
     h1 {
       span {
         white-space: nowrap;
-
-        @include screen(desktop) {
-          letter-spacing: 25px;
-        }
       }
     }
   }
@@ -281,10 +277,6 @@
       letter-spacing: 2px;
       line-height: 1;
       margin-top: 0;
-    }
-
-    @include screen(desktop) {
-      letter-spacing: 5px;
     }
 
     p {
