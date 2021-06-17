@@ -36,33 +36,30 @@ function stickyHeader() {
 }
 
 function initLightbox() {
-  const targetItem = document.getElementById('lightbox-container');
-  const imageset = parseInt(targetItem.getAttribute('data-imageset'));
+  const targetItem = document.querySelectorAll('#lightbox-container');
 
   if(targetItem === null || targetItem === undefined){
     return;
   }
 
-  for (let id = 0; id < imageset; id++) {
-    let imageId = id + 1;
-    targetItem.appendChild(lightbox(imageId));
+  for (const item of targetItem) {
+    const imageset = parseInt(item.getAttribute('data-imageset'));
+
+    for (let id = 0; id < imageset; id++) {
+      let imageId = id + 1;
+      item.appendChild(lightbox(imageId, item));
+    }
   }
-  
 }
 
-function lightbox(id) {
-  const targetItem = document.getElementById('lightbox-container');
-
-  if(targetItem === null || targetItem === undefined){
-    return;
-  }
-
+function lightbox(id, targetItem) {
   const imageset = parseInt(targetItem.getAttribute('data-imageset'));
   const defaultPath = '../../asset/image/';
   const mainPath = targetItem.getAttribute('data-mainlocate');
   const subPath = targetItem.getAttribute('data-sublocate');
   const imagePath = defaultPath + mainPath + '/' + subPath + '/' + id + '.jpg';
 
+  const group = targetItem.getAttribute('data-group') + '-';
 
   const container = document.createElement('div');
   container.className = 'col-6 col-md-3 col-lg-2';
