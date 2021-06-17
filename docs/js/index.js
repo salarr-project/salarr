@@ -59,32 +59,32 @@ function lightbox(id, targetItem) {
   const subPath = targetItem.getAttribute('data-sublocate');
   const imagePath = defaultPath + mainPath + '/' + subPath + '/' + id + '.jpg';
 
-  const group = targetItem.getAttribute('data-group') + '-';
+  const group = '#' + targetItem.getAttribute('data-group') + '-';
 
   const container = document.createElement('div');
   container.className = 'col-6 col-md-3 col-lg-2';
 
   const link = document.createElement('a');
-  link.href = '#img' + id;
+  link.href = group + id;
 
   const image = document.createElement('img');
   image.className = 'thumb';
   image.src = imagePath;
   const lightbox = document.createElement('div');
   lightbox.className = "lightbox";
-  lightbox.id = 'img' + id;
+  lightbox.id = targetItem.getAttribute('data-group') + '-' + id;
 
   const prevButton = document.createElement('a');
   prevButton.className = "light-btn btn-prev";
 
   if(id === 1) {
-    prevButton.href = '#img' + imageset;
+    prevButton.href = group + imageset;
   }
   else if (id === imageset) {
-    prevButton.href = '#img' + (imageset - 1);
+    prevButton.href = group + (imageset - 1);
   }
   else {
-    prevButton.href = '#img'+ (id - 1);
+    prevButton.href = group+ (id - 1);
   }
   prevButton.innerHTML = '&lt;';
 
@@ -99,10 +99,10 @@ function lightbox(id, targetItem) {
   nextButton.className = "light-btn btn-next";
 
   if (id === imageset) {
-    nextButton.href = '#img' + 1;
+    nextButton.href = group + 1;
   }
   else {
-    nextButton.href = '#img'+ (id + 1);
+    nextButton.href = group+ (id + 1);
   }
   nextButton.innerHTML = '&gt;';
 

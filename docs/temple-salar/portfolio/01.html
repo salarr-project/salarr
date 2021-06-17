@@ -1,657 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8" />
-    <title>สล่าวัด - ผลงาน</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8" />
+  <title>สล่าวัด - ผลงาน</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Prompt"
-    />
-    <link rel="stylesheet" href="../../boostrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="../../boostrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../../asset/image/favicon.png" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" />
+  <link rel="stylesheet" href="../../boostrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../boostrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
 
-    <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../../asset/image/favicon.png" />
 
-  <body class="red-bg" oncontextmenu="return false;">
-    >
-    <!-- Header -->
-    <header class="header-container">
-      <a
-        class="navbar-brand desktop d-none d-lg-flex justify-content-center"
-        href="../../index.html"
-        ><img src="../../asset/image/icons/salarr-logo.png" alt="logo"
-      /></a>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand mobile d-lg-none" href="../../index.html"
-            ><img src="../../asset/image/icons/salarr-logo.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.html">โครงการ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../about-temple.html"
-                  >สถาปัตยกรรมวัด</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../about-home.html"
-                  >สถาปัตยกรรมเรือน</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../../detail-temple.html"
-                  >สล่าวัด</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../detail-home.html">สล่าเรือน</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../contact.html">ติดต่อ</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-    <!-- Carousel Layout -->
-    <section class="carousel-container margin-top-me" id="section-carousel">
-      <div class="custom-row">
-        <div class="col-sm-12 d-flex float-text">
-          <div class="row">
-            <div>
-              <p>สล่าพ่อหนานมีน</p>
-            </div>
-            <div>
-              <p>นายเบญจมีน สุตา</p>
-            </div>
-          </div>
-
-          <div class="row text-end">
-            <div>
-              <p>สล่า-วัด</p>
-            </div>
-            <div>
-              <p>จังหวัดเชียงใหม่</p>
-            </div>
-          </div>
-        </div>
-        <div
-          id="portfolioCarousel"
-          class="col-sm-12 carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../../asset/image/detail-temple/salar-1/portfolio/1.png"
-                class="d-block w-100"
-                alt="สล่าวัด"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../../asset/image/detail-temple/salar-1/portfolio/2.png"
-                class="d-block w-100"
-                alt="สล่าวัด"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../../asset/image/detail-temple/salar-1/portfolio/3.png"
-                class="d-block w-100"
-                alt="สล่าวัด"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev d-lg-none"
-            type="button"
-            data-bs-target="#portfolioCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#portfolioCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <div class="decorate">
-      <img src="../../asset/image/icons/Asset 6.png" alt="asset" />
-    </div>
-
-    <div class="decorate right">
-      <img src="../../asset/image/icons/Asset 6.png" alt="asset" />
-    </div>
-
-    <section class="menu container contents">
-      <nav class="navbar navbar-light contents">
-        <a class="nav-link" href="../biography/01.html">ประวัติ</a>
-        <a class="nav-link" href="../skill/01.html">เชิงช่าง</a>
-        <a
-          class="nav-link active"
-          aria-current="page"
-          href="../portfolio/01.html"
-          >ผลงาน</a
-        >
-      </nav>
-    </section>
-
-    <section class="container contents">
-      <div class="icon-container">
-        <img src="../../asset/image/icons/Group 4.png" alt="ผลงานการออกแบบ" />
-      </div>
-
-      <div class="content-section">
-        <p class="text-center">
-          อุโบสถวัดร่ำเปิง(ตโปทาราม)<br />อำเภอเมือง จังหวัดเชียงใหม่
-        </p>
-      </div>
-
-      <div class="video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/adLGHcj_fmA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <div class="video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/adLGHcj_fmA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <div class="content-section">
-        <div
-          id="portfolioCarousel_footer"
-          class="col-sm-12 carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../../asset/image/detail-temple/salar-1/portfolio/4.png"
-                class="d-block w-100"
-                alt="สล่าวัด"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../../asset/image/detail-temple/salar-1/portfolio/5.png"
-                class="d-block w-100"
-                alt="สล่าวัด"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../../asset/image/detail-temple/salar-1/portfolio/6.png"
-                class="d-block w-100"
-                alt="สล่าวัด"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../../asset/image/detail-temple/salar-1/portfolio/7.png"
-                class="d-block w-100"
-                alt="สล่าวัด"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#portfolioCarousel_footer"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#portfolioCarousel_footer"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
-        </div>
-      </div>
-
-      <div class="content-section">
-        <p class="text-center">
-          “สิ่งที่สล่าทำวัดควรมีคือความรู้ด้านพุทธศาสนา ศึกษาเรื่องราวพุทธศาสนา
-          สร้างแรงศรัทธาจากจิตใจ การสร้างสภาวะที่สร้างความสงบภายในจิตใจตัวเอง
-          เข้าถึงหลักความเชื่อ พิธีกรรม ความหมาย
-          ก่อรูปเป็นศาสนสถาปัตยกรรมอย่างลึกซึ้ง
-          ผนวกกับงานองค์ประกอบทางสถาปัตยกรรม ที่สร้างความรู้สึกละมุน อ่อนโยน
-          อ่อนช้อย สร้างความประทับใจในศรัทธา”
-        </p>
-      </div>
-    </section>
-
-    <section class="container contents">
-      <div class="icon-container max-width_unset">
-        <img src="../../asset/image/icons/Group 46.png" alt="ภาพถ่ายผลงาน" />
-      </div>
-    </section>
-
-    <section class="container contents">
-      <div class="row">
-        <!-- 1 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img1">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/1.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img1">
-            <a href="#img17" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/1.jpg" />
-            <a href="#img2" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img2">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/2.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img2">
-            <a href="#img1" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/2.jpg" />
-            <a href="#img3" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img3">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/3.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img3">
-            <a href="#img2" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/3.jpg" />
-            <a href="#img4" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img4">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/4.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img4">
-            <a href="#img3" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/4.jpg" />
-            <a href="#img5" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img5">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/5.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img5">
-            <a href="#img4" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/5.jpg" />
-            <a href="#img6" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 6 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img6">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/6.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img6">
-            <a href="#img5" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/6.jpg" />
-            <a href="#img7" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 7 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img7">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/7.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img7">
-            <a href="#img6" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/7.jpg" />
-            <a href="#img8" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 8 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img8">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/8.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img8">
-            <a href="#img7" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/8.jpg" />
-            <a href="#img9" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 9 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img9">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/9.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img9">
-            <a href="#img8" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/9.jpg" />
-            <a href="#img10" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 10 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img10">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/10.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img10">
-            <a href="#img9" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/10.jpg" />
-            <a href="#img11" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 11 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img11">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/11.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img11">
-            <a href="#img10" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/11.jpg" />
-            <a href="#img12" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 12 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img12">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/12.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img12">
-            <a href="#img11" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/12.jpg" />
-            <a href="#img13" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 13 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img13">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/13.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img13">
-            <a href="#img12" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/13.jpg" />
-            <a href="#img14" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 14 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img14">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/14.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img14">
-            <a href="#img13" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/14.jpg" />
-            <a href="#img15" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 15 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img15">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/15.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img15">
-            <a href="#img14" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/15.jpg" />
-            <a href="#img16" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 16 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img16">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/16.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img16">
-            <a href="#img14" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/16.jpg" />
-            <a href="#img17" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-
-        <!-- 17 -->
-        <div class="col-6 col-md-3 col-lg-2">
-          <a href="#img17">
-            <img
-              class="thumb"
-              src="../../asset/image/temples/01_chiangmai/final/17.jpg"
-            />
-          </a>
-          <div class="lightbox" id="img17">
-            <a href="#img16" class="light-btn btn-prev">&lt;</a>
-            <a href="#_" class="btn-close"></a>
-            <img src="../../asset/image/temples/01_chiangmai/final/17.jpg" />
-            <a href="#img1" class="light-btn btn-next">&gt;</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-4 footer_about">
-          <h3>เกี่ยวกับเรา</h3>
-          <p>
-            ศูนย์ สถาปัตยกรรมล้านนา <br />
-            เลขที่ 117 ถนนราชดำเนิน ตำบลพระสิงห์ <br />
-            อำเภอเมือง จังหวัดเชียงใหม่ 50000 <br />
-            โทร: 0 5327 7855 โทรสาร: 0 5327 7855 <br />
-            คณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ 239 ถนนห้วยแก้ว <br />
-            อำเภอเมือง จังหวัดเชียงใหม่ 50200 <br />
-          </p>
-          <p>
-            Lanna Architecture Center Faculty of Architecture,<br />
-            Chiang Mai University 117 Ratchadumnoen Street <br />
-            Prasing District, Amphur Muang <br />
-            Chiang Mai, Thailand 50000 <br />
-            Tel: 05327 7855, Fax: 0 5327 7855
-          </p>
-        </div>
-        <div class="col-sm-12 col-lg-4 footer_main">
-          <h3>เกี่ยวกับเว็บ</h3>
-          <ul>
-            <li>
-              <a href="../../index.html">โครงการ</a>
+<body class="red-bg" oncontextmenu="return false;">
+  >
+  <!-- Header -->
+  <header class="header-container">
+    <a class="navbar-brand desktop d-none d-lg-flex justify-content-center" href="../../index.html"><img
+        src="../../asset/image/icons/salarr-logo.png" alt="logo" /></a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mobile d-lg-none" href="../../index.html"><img
+            src="../../asset/image/icons/salarr-logo.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">โครงการ</a>
             </li>
-            <li>
-              <a href="../../about-temple.html">สถาปัตยกรรมวัด</a>
+            <li class="nav-item">
+              <a class="nav-link" href="../../about-temple.html">สถาปัตยกรรมวัด</a>
             </li>
-            <li>
-              <a href="../../about-home.html">สถาปัตยกรรมเรือน</a>
+            <li class="nav-item">
+              <a class="nav-link" href="../../about-home.html">สถาปัตยกรรมเรือน</a>
             </li>
-            <li>
-              <a href="../../detail-temple.html">สล่าวัด</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../detail-temple.html">สล่าวัด</a>
             </li>
-            <li>
-              <a href="../../detail-home.html">สล่าเรือน</a>
+            <li class="nav-item">
+              <a class="nav-link" href="../../detail-home.html">สล่าเรือน</a>
             </li>
-            <li>
-              <a href="contact.html">ติดต่อ</a>
+            <li class="nav-item">
+              <a class="nav-link" href="../../contact.html">ติดต่อ</a>
             </li>
           </ul>
         </div>
-        <div class="col-sm-12 col-lg-4 footer_right">
-          <p class="mt-3 mb-2 mt-lg-0">คณะสถาปัตยกรรมศาสตร์</p>
-          <div class="footer_links">
-            <a target="”_blank”" href="https://www.arc.cmu.ac.th/"
-              ><img
-                src="../../asset/image/icons/logo_archcmu_banner_crop.png"
-                alt="archcmu-logo"
-                class="long-logo"
-            /></a>
-            <a target="”_blank”" href="https://www.facebook.com/arccmu/"
-              ><img
-                src="../../asset/image/icons/facebook-brands.svg"
-                alt="facebook-logo"
-            /></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carousel Layout -->
+  <section class="carousel-container margin-top-me" id="section-carousel">
+    <div class="custom-row">
+      <div class="col-sm-12 d-flex float-text">
+        <div class="row">
+          <div>
+            <p>สล่าพ่อหนานมีน</p>
           </div>
-          <p class="mt-3 mb-2">ศูนย์สถาปัตยกรรมล้านนา คุ้มเจ้าบุรีรัตน์</p>
-          <div class="footer_links">
-            <a target="”_blank”" href="https://www.lanna-arch.net/"
-              ><img
-                src="../../asset/image/icons/logokhum_final.png"
-                alt="khum-logo"
-                class="image-logo"
-            /></a>
-            <a
-              target="”_blank”"
-              href="https://www.facebook.com/SunySthapatykrrmLanNa/"
-              ><img
-                src="../../asset/image/icons/facebook-brands.svg"
-                alt="facebook-logo"
-            /></a>
-            <a href="mailto:khum.museum@gmail.com"
-              ><img src="../../asset/image/icons/gmail.svg" alt="mail-logo"
-            /></a>
+          <div>
+            <p>นายเบญจมีน สุตา</p>
+          </div>
+        </div>
+
+        <div class="row text-end">
+          <div>
+            <p>สล่า-วัด</p>
+          </div>
+          <div>
+            <p>จังหวัดเชียงใหม่</p>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        Copyright © 2021 All Rights Reserved by Salarr
-        <p>Current Visitors : <span id="cntr">122</span></p>
+      <div id="portfolioCarousel" class="col-sm-12 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../asset/image/detail-temple/salar-1/portfolio/1.png" class="d-block w-100" alt="สล่าวัด" />
+          </div>
+          <div class="carousel-item">
+            <img src="../../asset/image/detail-temple/salar-1/portfolio/2.png" class="d-block w-100" alt="สล่าวัด" />
+          </div>
+          <div class="carousel-item">
+            <img src="../../asset/image/detail-temple/salar-1/portfolio/3.png" class="d-block w-100" alt="สล่าวัด" />
+          </div>
+        </div>
+        <button class="carousel-control-prev d-lg-none" type="button" data-bs-target="#portfolioCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- End Document -->
-    <script src="../../boostrap/js/bootstrap.js"></script>
-    <script src="../../js/index.js"></script>
-  </body>
+  <div class="decorate">
+    <img src="../../asset/image/icons/Asset 6.png" alt="asset" />
+  </div>
+
+  <div class="decorate right">
+    <img src="../../asset/image/icons/Asset 6.png" alt="asset" />
+  </div>
+
+  <section class="menu container contents">
+    <nav class="navbar navbar-light contents">
+      <a class="nav-link" href="../biography/01.html">ประวัติ</a>
+      <a class="nav-link" href="../skill/01.html">เชิงช่าง</a>
+      <a class="nav-link active" aria-current="page" href="../portfolio/01.html">ผลงาน</a>
+    </nav>
+  </section>
+
+  <section class="container contents">
+    <div class="icon-container">
+      <img src="../../asset/image/icons/Group 4.png" alt="ผลงานการออกแบบ" />
+    </div>
+
+    <div class="content-section">
+      <p class="text-center">
+        อุโบสถวัดร่ำเปิง(ตโปทาราม)<br />อำเภอเมือง จังหวัดเชียงใหม่
+      </p>
+    </div>
+
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/adLGHcj_fmA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/adLGHcj_fmA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="content-section">
+      <div id="portfolioCarousel_footer" class="col-sm-12 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../asset/image/detail-temple/salar-1/portfolio/4.png" class="d-block w-100" alt="สล่าวัด" />
+          </div>
+          <div class="carousel-item">
+            <img src="../../asset/image/detail-temple/salar-1/portfolio/5.png" class="d-block w-100" alt="สล่าวัด" />
+          </div>
+          <div class="carousel-item">
+            <img src="../../asset/image/detail-temple/salar-1/portfolio/6.png" class="d-block w-100" alt="สล่าวัด" />
+          </div>
+          <div class="carousel-item">
+            <img src="../../asset/image/detail-temple/salar-1/portfolio/7.png" class="d-block w-100" alt="สล่าวัด" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel_footer"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel_footer"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <p class="text-center">
+        “สิ่งที่สล่าทำวัดควรมีคือความรู้ด้านพุทธศาสนา ศึกษาเรื่องราวพุทธศาสนา
+        สร้างแรงศรัทธาจากจิตใจ การสร้างสภาวะที่สร้างความสงบภายในจิตใจตัวเอง
+        เข้าถึงหลักความเชื่อ พิธีกรรม ความหมาย
+        ก่อรูปเป็นศาสนสถาปัตยกรรมอย่างลึกซึ้ง
+        ผนวกกับงานองค์ประกอบทางสถาปัตยกรรม ที่สร้างความรู้สึกละมุน อ่อนโยน
+        อ่อนช้อย สร้างความประทับใจในศรัทธา”
+      </p>
+    </div>
+  </section>
+
+  <section class="container contents">
+    <div class="icon-container max-width_unset">
+      <img src="../../asset/image/icons/Group 46.png" alt="ภาพถ่ายผลงาน" />
+    </div>
+  </section>
+
+  <section class="container contents">
+    <div class="row" id="lightbox-container" data-group="temples-final" data-imageset="11" data-mainlocate="temples"
+      data-sublocate="01_chiangmai/final"></div>
+  </section>
+
+  <footer class="footer container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4 footer_about">
+        <h3>เกี่ยวกับเรา</h3>
+        <p>
+          ศูนย์ สถาปัตยกรรมล้านนา <br />
+          เลขที่ 117 ถนนราชดำเนิน ตำบลพระสิงห์ <br />
+          อำเภอเมือง จังหวัดเชียงใหม่ 50000 <br />
+          โทร: 0 5327 7855 โทรสาร: 0 5327 7855 <br />
+          คณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ 239 ถนนห้วยแก้ว <br />
+          อำเภอเมือง จังหวัดเชียงใหม่ 50200 <br />
+        </p>
+        <p>
+          Lanna Architecture Center Faculty of Architecture,<br />
+          Chiang Mai University 117 Ratchadumnoen Street <br />
+          Prasing District, Amphur Muang <br />
+          Chiang Mai, Thailand 50000 <br />
+          Tel: 05327 7855, Fax: 0 5327 7855
+        </p>
+      </div>
+      <div class="col-sm-12 col-lg-4 footer_main">
+        <h3>เกี่ยวกับเว็บ</h3>
+        <ul>
+          <li>
+            <a href="../../index.html">โครงการ</a>
+          </li>
+          <li>
+            <a href="../../about-temple.html">สถาปัตยกรรมวัด</a>
+          </li>
+          <li>
+            <a href="../../about-home.html">สถาปัตยกรรมเรือน</a>
+          </li>
+          <li>
+            <a href="../../detail-temple.html">สล่าวัด</a>
+          </li>
+          <li>
+            <a href="../../detail-home.html">สล่าเรือน</a>
+          </li>
+          <li>
+            <a href="contact.html">ติดต่อ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-lg-4 footer_right">
+        <p class="mt-3 mb-2 mt-lg-0">คณะสถาปัตยกรรมศาสตร์</p>
+        <div class="footer_links">
+          <a target="”_blank”" href="https://www.arc.cmu.ac.th/"><img
+              src="../../asset/image/icons/logo_archcmu_banner_crop.png" alt="archcmu-logo" class="long-logo" /></a>
+          <a target="”_blank”" href="https://www.facebook.com/arccmu/"><img
+              src="../../asset/image/icons/facebook-brands.svg" alt="facebook-logo" /></a>
+        </div>
+        <p class="mt-3 mb-2">ศูนย์สถาปัตยกรรมล้านนา คุ้มเจ้าบุรีรัตน์</p>
+        <div class="footer_links">
+          <a target="”_blank”" href="https://www.lanna-arch.net/"><img src="../../asset/image/icons/logokhum_final.png"
+              alt="khum-logo" class="image-logo" /></a>
+          <a target="”_blank”" href="https://www.facebook.com/SunySthapatykrrmLanNa/"><img
+              src="../../asset/image/icons/facebook-brands.svg" alt="facebook-logo" /></a>
+          <a href="mailto:khum.museum@gmail.com"><img src="../../asset/image/icons/gmail.svg" alt="mail-logo" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2021 All Rights Reserved by Salarr
+      <p>Current Visitors : <span id="cntr">122</span></p>
+    </div>
+  </footer>
+
+  <!-- End Document -->
+  <script src="../../boostrap/js/bootstrap.js"></script>
+  <script src="../../js/index.js"></script>
+</body>
+
 </html>
