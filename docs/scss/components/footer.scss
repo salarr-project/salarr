@@ -52,6 +52,14 @@
       padding-bottom: 0;
     }
 
+    &:first-child {
+      padding-bottom: 0;
+
+      @include screen(tablet-landscape) {
+        padding-top: 0;
+      }
+    }
+
     img:not(.long-logo) {
       width: 40px;
       height: 40px;
@@ -61,6 +69,11 @@
     .long-logo {
       width: auto;
       height: 40px;
+    }
+
+    .cmu-logo {
+      width: 90px !important;
+      height: auto !important;
     }
 
     .image-logo {

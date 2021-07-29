@@ -213,8 +213,30 @@ function footerGenerator() {
   // main container 1 --- footer right
   const footerRight = document.createElement("div");
   footerRight.className = "col-sm-12 col-lg-4 footer_right";
+
+  // main container 1 --- footer right - links 0
+  const footerLinks0 = document.createElement("div");
+  footerLinks0.className = "footer_links pb-sm-0";
+
+  // main container 1 --- footer right - links - 1
+  const footerLinks0_a1 = document.createElement("a");
+  footerLinks0_a1.href = `https://www.cmu.ac.th/`;
+  footerLinks0_a1.target = `_blank`;
+  const footerLinks0_a1_img = document.createElement("img");
+  footerLinks0_a1_img.src = path + `asset/image/icons/cmu.png`;
+  footerLinks0_a1_img.className = `image-logo cmu-logo`;
+
+  footerLinks0_a1.appendChild(footerLinks0_a1_img);
+  footerLinks0.appendChild(footerLinks0_a1);
+  footerRight.appendChild(footerLinks0);
+
+  const footerRight_p0 = document.createElement("p");
+  footerRight_p0.className = "mt-3 mb-2";
+  footerRight_p0.innerHTML = `ได้รับการสนับสนุนทุนโดย</br>ทุนงบประมาณการขับเคลื่อนยุทธศาสตร์ที่ 3</br>เชิงรุก : ล้านนาสร้างสรรค์`;
+  footerRight.appendChild(footerRight_p0);
+
   const footerRight_p1 = document.createElement("p");
-  footerRight_p1.className = "mt-3 mb-2 mt-lg-0";
+  footerRight_p1.className = "mt-3 mb-2";
   footerRight_p1.innerHTML = `คณะสถาปัตยกรรมศาสตร์`;
 
   footerRight.appendChild(footerRight_p1);
